@@ -7,19 +7,93 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
 }
 
-.body {
-    font-family: "Outfit", sans-serif;
+.active {
+    background-color: white;
+    display: block;
 }
 
-.body.bold {
+.click {
+    color: black !important;
+    background-color: white !important;
+}
+
+#option:hover {
+    cursor: pointer;
+}
+
+#option {
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 55px;
+    padding: 10px 16px;
+    background-color: transparent;
+    color: white;
+}
+
+ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    margin-left: 4rem;
+    padding: 0;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.fa-solid {
+    font-size: 40px;
+}
+
+body {
+    background-color: #090A0F;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 12vh;
+    margin-left: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 64px;
     font-weight: 700;
 }
 
-.body.italic {
-    font-style: italic;
+p {
+    color: rgb(252, 91, 255);
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.body.bold.italic {
-    font-weight: 700;
-    font-style: italic;
+.header {
+    top: 50px;
+    margin: auto;
+    padding: 0% 10%;
+    max-width: 900px;
+}
+
+#title {
+    text-align: center;
+    border: white 10px solid;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding-top: 5%;
 }
